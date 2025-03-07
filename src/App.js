@@ -4,6 +4,7 @@ import ExpenseList from './components/ExpenseList';
 import ExpenseForm from './components/ExpenseForm';
 import UserList from './components/UserList';
 import UserForm from './components/UserForm';
+import Register from './components/Register';
 import Navbar from './components/Navbar';
 
 const App = () => {
@@ -11,7 +12,8 @@ const App = () => {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/" element={<ExpenseList />} />
+                <Route path="/Register" element={<Register />} />
+                <Route path="/ExpenseList" element={<ExpenseList />} />
                 <Route path="/add-expense" element={<ExpenseForm />} />
                 <Route path="/users" element={<UserList />} />
                 <Route path="/add-user" element={<UserForm />} />
